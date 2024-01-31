@@ -19,3 +19,9 @@ body {
 .logo-icon {
   padding-left: 0.15rem;
 }
+
+@media (max-width: 800px) {
+  body {
+    font-size: 0.8rem; /* You can adjust the desired font size here */
+  }
+}
