@@ -7,7 +7,7 @@ const ScrollControlledVideo = () => {
 
   useEffect(() => {
     // Disable the default page scroll
-    document.body.style.overflow = "hidden";
+    document.body.classList.add("overflow-hidden");
 
     const handleWheel = (e) => {
       const video = videoRef.current;
@@ -27,23 +27,15 @@ const ScrollControlledVideo = () => {
     return () => {
       window.removeEventListener("wheel", handleWheel);
       // Restore page scroll
-      document.body.style.overflow = "";
+      document.body.classList.remove("overflow-hidden");
     };
   }, []);
 
   return (
-    <div
-      style={{
-        top: 0,
-        left: 0,
-        height: "100vh",
-        overflow: "hidden",
-      }}
-    >
+    <div className="fixed inset-0 overflow-hidden">
       <video
         ref={videoRef}
-        width="100%"
-        height="100%"
+        className="w-full h-full object-cover"
         preload="auto"
         playsInline
         muted
