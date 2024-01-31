@@ -9,13 +9,30 @@ const ScrollControlledVideo = () => {
     // Disable the default page scroll
     document.body.classList.add("overflow-hidden");
 
+    let lastTouchY = 0;
+
     const handleWheel = (e) => {
+      const delta = e.deltaY;
+      handleScroll(delta);
+    };
+
+    const handleTouchStart = (e) => {
+      lastTouchY = e.touches[0].clientY;
+    };
+
+    const handleTouchMove = (e) => {
+      const touchY = e.touches[0].clientY;
+      const deltaY = lastTouchY - touchY;
+      lastTouchY = touchY;
+      handleScroll(deltaY);
+    };
+
+    const handleScroll = (delta) => {
       const video = videoRef.current;
       if (!video) return;
 
-      // Calculate the new time for the video based on scroll direction
-      const delta = e.deltaY;
-      const speed = 0.001; // Adjust this value to control the speed of playback based on scroll
+      // Adjust this value to control the speed of playback based on scroll
+      const speed = 0.001;
       const calculatedTime = video.currentTime + delta * speed;
 
       // Update the video current time, clamping it within the video duration
@@ -23,9 +40,13 @@ const ScrollControlledVideo = () => {
     };
 
     window.addEventListener("wheel", handleWheel, { passive: false });
+    window.addEventListener("touchstart", handleTouchStart, { passive: false });
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
 
     return () => {
       window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
       // Restore page scroll
       document.body.classList.remove("overflow-hidden");
     };
