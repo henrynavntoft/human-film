@@ -74,7 +74,6 @@ const BackgroundVideo = () => {
       </video>
       <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
         <div className="text-center text-white">
-          <h2 className="text-4xl mb-8">HUMANS</h2>
           <div className="my-8">
             <h3 className="text-2xl my-2">{people[currentPersonIndex].name}</h3>
             <p className="text-xl my-2">{people[currentPersonIndex].role}</p>
