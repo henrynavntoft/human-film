@@ -1,17 +1,24 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "./components/Header";
 
 export const metadata = {
-  title: "Human Film Test",
+  title: "Human Film",
   description: "",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://use.typekit.net/jrh2pge.css"
+        ></link>
+      </head>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

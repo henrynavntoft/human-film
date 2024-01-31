@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://use.typekit.net/jrh2pge.css");
+
+body {
+  font-family: "interstate", sans-serif; /* Ensure the font name matches exactly */
+  font-weight: 500; /* Confirm the font weight is available */
+  font-size: 1rem; /* This sets the global font size */
+}
+
+.logo-human {
+  letter-spacing: 0.15rem;
+  padding-right: 0.15rem;
+  font-weight: 700; /* Confirm the font weight is available */
+}
+
+.logo-icon {
+  padding-left: 0.15rem;
+}
