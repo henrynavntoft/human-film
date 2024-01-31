@@ -6,7 +6,7 @@
 
 body {
   font-family: "interstate", sans-serif; /* Ensure the font name matches exactly */
-  font-weight: 500; /* Confirm the font weight is available */
+  font-weight: 400; /* Confirm the font weight is available */
   font-size: 1rem; /* This sets the global font size */
 }
 
