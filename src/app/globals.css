@@ -6,8 +6,23 @@
 
 body {
   font-family: "interstate", sans-serif; /* Ensure the font name matches exactly */
-  font-weight: 400; /* Confirm the font weight is available */
+  font-weight: 300; /* Confirm the font weight is available */
   font-size: 1rem; /* This sets the global font size */
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .logo-human {
@@ -24,4 +39,49 @@ body {
   body {
     font-size: 0.8rem; /* You can adjust the desired font size here */
   }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.white-filter {
+  filter: invert(100%);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.animated-underline {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 50%;
+  background-color: white;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+  left: 0;
 }
