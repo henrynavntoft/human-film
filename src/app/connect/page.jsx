@@ -31,7 +31,7 @@ const BackgroundVideo = () => {
       {/* Overlay with Contact Info */}
       <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
         <div className="text-center text-white">
-          <h1 className="mb-4">Connect with us</h1>
+          <h1 className="mb-4">CONNECT WITH US</h1>
           <div className="block sm:flex sm:gap-8">
             <h2 className="mb-4">cb@humanfilm.dk</h2>
             <h2 className="mb-4">+45 40 56 22 44</h2>

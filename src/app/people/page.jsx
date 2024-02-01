@@ -5,38 +5,38 @@ import React, { useRef, useEffect, useState } from "react";
 
 const people = [
   {
-    name: "Christian Bévort",
+    name: "CHRISTIAN BÉVORT",
     role: "EP & CEO",
     bio: "Serial start-up entrepreneur in high-end media and marketing since mid 90's.",
     linkedin: "https://www.linkedin.com/in/christian-b%C3%A9vort-84241b3/",
   },
   {
-    name: "Søren Engberg",
-    role: "Head of Production",
+    name: "SØREN ENGBERG",
+    role: "HEAD OF PRODUCTION",
     bio: "Extensive experience in spearheading leading production companies.",
     linkedin: "https://www.linkedin.com/in/s%C3%B8ren-engberg-76098444/",
   },
   {
-    name: "Uffe Truust",
-    role: "Creative Director",
+    name: "UFFE TRUUST",
+    role: "CREATIVE DIRECTOR",
     bio: "Global experience in bridging corporate strategic objectives with film storytelling.",
     linkedin: "https://www.linkedin.com/in/uffetruust/",
   },
   {
-    name: "Henrik Dahlerup",
-    role: "Strategic Planning",
+    name: "HENRIK DAHLERUP",
+    role: "STATEGIC PLANNING",
     bio: "Multiple senior positions within international advertising and marketing.",
     linkedin: "https://www.linkedin.com/in/henrik-dahlerup-12520b9/",
   },
   {
-    name: "Rikke Laumann",
-    role: "Strategic Design",
+    name: "RIKKE LAUMANN",
+    role: "STATEGIC DESIGN",
     bio: "Senior experience from leading ad agencies and founder of own design house.",
     linkedin: "https://www.linkedin.com/in/simplyrikke/",
   },
   {
-    name: "Rasmus Laumann",
-    role: "Creative",
+    name: "RASMUS LAUMANN",
+    role: "CREATIVE",
     bio: "Creative Head of ad agencies, director at global fashion brand and founder of own agency.",
     linkedin: "https://www.linkedin.com/in/laumann/",
   },
@@ -101,16 +101,15 @@ const BackgroundVideo = () => {
           <h3 className="max-w-lg px-8 my-2">
             {people[currentPersonIndex].bio}
           </h3>
-          <div className="flex justify-center items-center mx-auto ">
-            <Image
-              src="/arrow.go.svg"
-              alt="arrow"
-              width={25}
-              height={25}
-              className="white-filter"
-            />
+          <div className="flex justify-center items-center mx-auto py-3">
             <Link href={`${people[currentPersonIndex].linkedin}`}>
-              <p className="animated-underline "> linkedin</p>
+              <Image
+                src="/linkedin.svg"
+                alt="arrow"
+                width={40}
+                height={25}
+                className="white-filter"
+              />
             </Link>
           </div>
         </div>
