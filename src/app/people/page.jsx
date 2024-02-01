@@ -102,7 +102,10 @@ const BackgroundVideo = () => {
             {people[currentPersonIndex].bio}
           </h3>
           <div className="flex justify-center items-center mx-auto py-3">
-            <Link href={`${people[currentPersonIndex].linkedin}`}>
+            <Link
+              target="_blank"
+              href={`${people[currentPersonIndex].linkedin}`}
+            >
               <Image
                 src="/linkedin.svg"
                 alt="arrow"

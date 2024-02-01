@@ -46,7 +46,7 @@ const BackgroundVideo = () => {
                 height={25}
                 className="white-filter"
               />
-              <Link href={""}>
+              <Link href={""} target="_blank">
                 <p className="animated-underline">linkedin</p>
               </Link>
             </div>
@@ -58,7 +58,7 @@ const BackgroundVideo = () => {
                 height={25}
                 className="white-filter"
               />
-              <Link href={""}>
+              <Link href={""} target="_blank">
                 <p className="animated-underline">instagram</p>
               </Link>
             </div>
