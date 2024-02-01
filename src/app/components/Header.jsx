@@ -6,8 +6,8 @@ export default function Header() {
     // Ensure the header has a higher z-index value to appear on top of the background video.
     // Adding 'bg-opacity-75 bg-black' for better visibility over the video if needed.
     <div className="flex justify-between items-start w-full py-6 sm:px-12 px-4 z-50 fixed top-0 left-0 right-0 bg-opacity-75 text-white">
-      <Link href="/people">
-        <p className="">PEOPLE</p>
+      <Link className="flex align-top justify-start" href="/people">
+        <p>PEOPLE</p>
       </Link>
 
       <Link className="ml-4" href="/">
@@ -18,8 +18,8 @@ export default function Header() {
         <Image alt="logo" src={"/logo.svg"} width={200} height={50}></Image>
       </Link>
 
-      <Link href="/connect">
-        <p className="">CONNECT</p>
+      <Link className="flex align-top justify-start" href="/connect">
+        <p>CONNECT</p>
       </Link>
     </div>
   );

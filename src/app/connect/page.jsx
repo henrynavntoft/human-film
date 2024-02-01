@@ -25,7 +25,7 @@ const BackgroundVideo = () => {
         loop // Loop the video
         autoPlay // Attempt to autoplay the video
       >
-        <source src="/vieo.mp4" type="video/mp4" />
+        <source src="/clean-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Overlay with Contact Info */}
