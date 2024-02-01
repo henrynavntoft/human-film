@@ -91,7 +91,7 @@ const BackgroundVideo = () => {
         Your browser does not support the video tag.
       </video>
       <div
-        className={`absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center transition-opacity duration-300 ${
+        className={`absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center transition-opacity duration-300 bg-black bg-opacity-50 ${
           animate ? "opacity-0 translate-y-0" : "opacity-100 translate-y-0"
         }`}
       >
