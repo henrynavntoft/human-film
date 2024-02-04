@@ -31,37 +31,31 @@ const BackgroundVideo = () => {
       {/* Overlay with Contact Info */}
       <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
         <div className="text-center text-white">
-          <h1 className="mb-4">CONNECT WITH US</h1>
           <div className="block sm:flex sm:gap-8">
             <h2 className="mb-4">cb@humanfilm.dk</h2>
             <h2 className="mb-4">+45 40 56 22 44</h2>
           </div>
-          <h3 className="">Thoravej 24, Copenhagen</h3>
+          <h2 className="">Thoravej 24, 2400, Copenhagen</h2>
           <div className="flex justify-center items-center mx-auto gap-4 my-4">
-            <div className="flex">
+            <Link href={""} target="_blank">
               <Image
-                src="/arrow.go.svg"
+                src="/linkedin.svg"
                 alt="arrow"
-                width={25}
+                width={35}
                 height={25}
                 className="white-filter"
               />
-              <Link href={""} target="_blank">
-                <p className="animated-underline">linkedin</p>
-              </Link>
-            </div>
-            <div className="flex">
+            </Link>
+
+            <Link href={""} target="_blank">
               <Image
-                src="/arrow.go.svg"
+                src="/instagram.svg"
                 alt="arrow"
-                width={25}
+                width={35}
                 height={25}
                 className="white-filter"
               />
-              <Link href={""} target="_blank">
-                <p className="animated-underline">instagram</p>
-              </Link>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

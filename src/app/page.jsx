@@ -29,7 +29,7 @@ const BackgroundVideo = () => {
   let videoSource, videoClass;
   if (windowWidth < 600) {
     videoSource = "/mobile-video.mp4";
-    videoClass = "object-cover w-full h-full"; // Adjust as needed for vertical video
+    videoClass = "object-cover w-full h-full";
   } else if (windowWidth < 1200) {
     videoSource = "/tablet-video.mp4";
     videoClass = "w-full h-full object-cover";
