@@ -79,7 +79,9 @@ const ImageBackground = () => {
           alt="Background"
           width={10000}
           height={10000}
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover transition-opacity duration-300 bg-black bg-opacity-50 ${
+            animate ? "opacity-0 translate-y-0" : "opacity-100 translate-y-0"
+          }`}
         />
       </div>
       <div
