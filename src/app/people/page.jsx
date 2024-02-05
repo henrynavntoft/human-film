@@ -6,37 +6,37 @@ import React, { useRef, useEffect, useState } from "react";
 const people = [
   {
     name: "CHRISTIAN BÉVORT",
-    role: "EP & CEO",
+    role: "Partner & CEO",
     bio: "Serial start-up entrepreneur in high-end media and marketing since mid 90's.",
     linkedin: "https://www.linkedin.com/in/christian-b%C3%A9vort-84241b3/",
   },
   {
     name: "SØREN ENGBERG",
-    role: "HEAD OF PRODUCTION",
+    role: "Head of Production",
     bio: "Extensive experience in spearheading leading production companies.",
     linkedin: "https://www.linkedin.com/in/s%C3%B8ren-engberg-76098444/",
   },
   {
     name: "UFFE TRUUST",
-    role: "CREATIVE DIRECTOR",
+    role: "Creative Director",
     bio: "Global experience in bridging corporate strategic objectives with film storytelling.",
     linkedin: "https://www.linkedin.com/in/uffetruust/",
   },
   {
     name: "HENRIK DAHLERUP",
-    role: "STATEGIC PLANNING",
+    role: "Strategic Planning",
     bio: "Multiple senior positions within international advertising and marketing.",
     linkedin: "https://www.linkedin.com/in/henrik-dahlerup-12520b9/",
   },
   {
     name: "RIKKE LAUMANN",
-    role: "STATEGIC DESIGN",
+    role: "Strategic Design",
     bio: "Senior experience from leading ad agencies and founder of own design house.",
     linkedin: "https://www.linkedin.com/in/simplyrikke/",
   },
   {
     name: "RASMUS LAUMANN",
-    role: "CREATIVE",
+    role: "Creative",
     bio: "Creative Head of ad agencies, director at global fashion brand and founder of own agency.",
     linkedin: "https://www.linkedin.com/in/laumann/",
   },
@@ -96,7 +96,7 @@ const BackgroundVideo = () => {
         }`}
       >
         <div className="text-center text-white">
-          <h1 className="my-2 font-normal">
+          <h1 className="my-2">
             {people[currentPersonIndex].name}
           </h1>
           <h2 className="my-2">{people[currentPersonIndex].role}</h2>
@@ -111,7 +111,7 @@ const BackgroundVideo = () => {
               <Image
                 src="/linkedin.svg"
                 alt="arrow"
-                width={35}
+                width={30}
                 height={25}
                 className="white-filter"
               />
