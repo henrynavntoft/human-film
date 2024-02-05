@@ -32,7 +32,7 @@ const BackgroundVideo = () => {
       <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
         <div className="text-center text-white">
           <div className="block sm:flex sm:gap-8">
-            <h2 className="mb-4">cb@humanfilm.dk</h2>
+            <h2 className="mb-4">yani@humanfilm.dk</h2>
             <h2 className="mb-4">+45 40 56 22 44</h2>
           </div>
           <h2 className="">Thoravej 24, 2400, Copenhagen</h2>
