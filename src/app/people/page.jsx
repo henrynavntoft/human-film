@@ -96,11 +96,11 @@ const BackgroundVideo = () => {
         }`}
       >
         <div className="text-center text-white">
-          <h1 className="my-2">
+          <h1 className="">
             {people[currentPersonIndex].name}
           </h1>
-          <h2 className="my-2">{people[currentPersonIndex].role}</h2>
-          <h3 className="max-w-lg px-8 my-2">
+          <h2 className="">{people[currentPersonIndex].role}</h2>
+          <h3 className="max-w-lg px-8 my-7">
             {people[currentPersonIndex].bio}
           </h3>
           <div className="flex justify-center items-center mx-auto py-3">
