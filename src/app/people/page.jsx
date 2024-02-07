@@ -100,7 +100,8 @@ const BackgroundVideo = () => {
             {people[currentPersonIndex].name}
           </h1>
           <h2 className="">{people[currentPersonIndex].role}</h2>
-          <h3 className="max-w-md px-8 my-7">
+          <h3 className="max-w-lg px-8 my-7 text-wrap
+          ">
             {people[currentPersonIndex].bio}
           </h3>
           <div className="flex justify-center items-center mx-auto py-3">
