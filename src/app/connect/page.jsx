@@ -56,7 +56,7 @@ const BackgroundVideo = () => {
           </div>
           <h2 className="mb-4">cb@humanfilm.dk</h2>
           <h2 className="mb-4">+45 40 56 22 44</h2>
-          <h3 className="mb-4">CVR: 44444444</h3>
+          <h3 className="mb-4">CVR: 44 45 30 96</h3>
           
           {/* <div className="flex justify-center items-center mx-auto gap-4 my-4">
             <Link href={""} target="_blank">
